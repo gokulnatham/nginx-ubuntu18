@@ -17,5 +17,5 @@ EXPOSE 80
 
 ENTRYPOINT ["nginx"]
 
-HEALTHCHECK --interval=10s --timeout=3s \
+HEALTHCHECK --interval=1s --timeout=1s \
   CMD curl -f http://localhost/ || exit 1
